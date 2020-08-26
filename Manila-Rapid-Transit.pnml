@@ -1,0 +1,56 @@
+/* Manila-Rapid NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//GRF Definition
+#include "src/header.pnml"
+
+//Cargo refit definition
+#include "src/cargo_refits.pnml"
+
+//Default vehicle properties
+#include "src/default_properties.pnml"
+
+//Loading speed definitions
+#include "src/loading_speed.pnml"
+
+//Undefined properties
+#include "src/undefine_properties.pnml"
+
+//Capactiy switch
+#include "src/capacities.pnml"
+
+//Template for graphics files
+#include "src/graphics_template.pnml"
+
+//Costs calculations
+#include "src/costs.pnml"
+
+//Railtypes
+#include "src/railtypetable.pnml"
+
+//Cargo decay
+#include "src/cargo_decay.pnml"
+
+//MU Coach calculations
+#include "src/mu_coach_calc.pnml"
+
+#include "src/cargotable.pnml"
+
+//LRV

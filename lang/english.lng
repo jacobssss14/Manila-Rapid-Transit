@@ -1,0 +1,38 @@
+# PNR-Trains NewGRF For OpenTTD
+# Copyright (C) 2020  Jacob Payag
+
+# This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+# This program is free software; you can redistribute it and/or 
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
+
+##grflangid 0x01
+#Engish language file
+
+#GRF names and description definitions
+STR_GRF_NAME        : Manila Rapid Transit 0.0.0
+STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
+
+#LRV
+STR_LRTA_CLASS_1000 : LRTA Class 1000
+STR_MRTC_CLASS_3000 : MRTC Class 3000
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* Manila-Rapid NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//GRF definition
+
+grf {
+   grfid: "PM\02\01";
+   name:                   string(STR_GRF_NAME);
+   desc:                   string(STR_GRF_DESCRIPTION);
+   version:                01;
+   min_compatible_version: 0;
+}
+
+//set depot vehicle width to 32px to avoid overlap
+train_width_32_px = 1;
+//align train properly in depot window
+traininfo_y_offset = 2;
+
+
