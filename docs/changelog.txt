@@ -1,0 +1,4 @@
+Changelog for Manila-Rapid-Transit
+
+0.1.0
+    *Added LRTA Class 1000 LRV
