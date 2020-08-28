@@ -1,4 +1,7 @@
 Changelog for Manila-Rapid-Transit
+0.1.1
+    *Fixed LRTA Class 1000 LRV graphics
+    *Fixed LRTA Class 1000 LRV Visual Effects
 
 0.1.0
     *Added LRTA Class 1000 LRV
