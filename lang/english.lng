@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 0.1.1
+STR_GRF_NAME        : Manila Rapid Transit 0.2.0
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 #LRV

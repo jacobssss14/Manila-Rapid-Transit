@@ -19,41 +19,34 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset (set_lrta_class_1000_purchase, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_2000_purchase, "gfx/LRTA_CLASS_2000.png") {
 
     template_purchase(1,106)
 }
 
 
-spriteset (set_lrta_class_1000_front, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_2000_front, "gfx/LRTA_CLASS_2000.png") {
 
     template_standard(1,1)
 }
 
 
-spriteset (set_lrta_class_1000_back, "gfx/LRTA_CLASS_1000.png") {
-
-    template_standard(1,64)
-}
-
-
-spriteset (set_lrta_class_1000_middle, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_2000_back, "gfx/LRTA_CLASS_2000.png") {
 
     template_standard(1,32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_vehid_chain % 3)) {
-	1: set_lrta_class_1000_middle;
-	2: set_lrta_class_1000_back;
-    set_lrta_class_1000_front;
+
+spriteset (set_lrta_class_2000_pass_car, "gfx/LRTA_CLASS_2000.png") {
+
+    template_standard(1,64)
 }
 
-
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_articulated, extra_callback_info1) {
-    1..2: return item_lrv_lrta_class_1000;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+switch(FEAT_TRAINS, SELF, switch_lrta_class_2000_reversed, var[0xC8]) {
+	 0xFE: set_lrta_class_2000_back;
+    0xFF: set_lrta_class_2000_back;
+    set_lrta_class_2000_front;
 }
-
 
 ENGINECAPACITYSWITCH(VEHIDCODE)
 

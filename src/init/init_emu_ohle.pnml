@@ -19,16 +19,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-//Vehicle IDS
-#define ID_RANGE_DMU 0x3E8..0x7CF
-item(FEAT_TRAINS, dmu_kiha_35, 1000) {}
-item(FEAT_TRAINS, dmu_kiha_59, 1001) {}
-item(FEAT_TRAINS, dmu_hyundai_rotem, 1002) {}
+
+#include "undefined_properties.pnml"
+
+#define CURRENT_TRACK_TYPE ELRL
+#define CURRENT_RUNNING_COST_BASE RUNNING_COST_ELECTRIC
+#define CURRENT_ENGINE_CLASS ENGINE_CLASS_ELECTRIC
 
 
-#define ID_RANGE_COACH 0x7D0..0xBB7
-item(FEAT_TRAINS, item_203_coach 2000) {}
-item(FEAT_TRAINS, item_203_generator_car  2001) {}
-item(FEAT_TRAINS, item_rapid_unit_coach_unpowered 2002) {}
-item(FEAT_TRAINS, item_rapid_unit_coach_powered 2003) {}
-
+// Room for specific defines
+#define PURCHASECOSTVALUE PURCHASE_ELECTRIC
+#define RUNNINGCOSTVALUE  RUNNING_ELECTRIC
