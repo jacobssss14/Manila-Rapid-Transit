@@ -42,6 +42,10 @@ spriteset (set_lrta_class_2000_pass_car, "gfx/LRTA_CLASS_2000.png") {
     template_standard(1,64)
 }
 
+switch(FEAT_TRAINS, SELF, switch_lrta_class_2000_pass_cargo, cargo_classes){
+	bitmask(CC_PASSENGERS): set_lrta_class_2000_pass_car;
+}
+
 switch(FEAT_TRAINS, SELF, switch_lrta_class_2000_reversed, var[0xC8]) {
 	 0xFE: set_lrta_class_2000_back;
     0xFF: set_lrta_class_2000_back;

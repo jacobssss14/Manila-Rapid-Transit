@@ -48,8 +48,8 @@ item(FEAT_TRAINS, ITEM) {
 		length: LENGTH;
       
    }
-   graphics {
-      purchase: set_rapid_unit_coach_unpowered_purchase;
+    graphics {
+      purchase:set_rapid_unit_coach_unpowered_purchase;
 	  default: set_rapid_unit_coach_unpowered;
 	  RUNNING_COST_ENGINE_CALL
    }

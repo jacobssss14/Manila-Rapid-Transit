@@ -61,7 +61,28 @@ item (FEAT_TRAINS, ITEM) {
       purchase: set_lrta_class_2000_purchase;
 	  default: switch_lrta_class_2000_reversed;
    
+   }
 
+   livery_override (item_rapid_unit_coach_unpowered) {
+	    RUNNING_COST_MU_UNPOWERED_CALL 
+	   	loading_speed: LOADINGSPEED;
+	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		length: WAGON_LENGTH;
+		weight: ADD_WEIGHT_UNPOWERED
+		DECAY
+		default: switch_lrta_class_2000_pass_cargo;
+   }
+
+   livery_override (item_rapid_unit_coach_powered) {
+	    RUNNING_COST_MU_POWERED_CALL 
+	   	loading_speed: LOADINGSPEED;
+	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		length: WAGON_LENGTH;
+		weight: ADD_WEIGHT_POWERED
+		power: ADD_POWER
+		tractive_effort_coefficient: ADD_TE
+		DECAY
+		default: switch_lrta_class_2000_pass_cargo;
    }
 
 }

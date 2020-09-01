@@ -19,6 +19,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
+//No cargo vehicles
+#define NO_LOAD 0
+
 //LRV
 #define LOAD_LRV 120
 
