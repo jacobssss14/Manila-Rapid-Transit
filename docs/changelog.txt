@@ -1,4 +1,7 @@
 Changelog for Manila-Rapid-Transit
+0.3.1
+    *Fixed LRTA Class 2000 display name
+    *Fixed Rapid Unit Coach Purchse Sprite
 0.3.0
     *Added Rapid Unit Coaches
 

@@ -18,6 +18,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+
 template template_standard(x, y) {
    [x,     y, 8,  24, -3,  -12]
    [x+9,   y, 22, 21, -14, -12]
@@ -38,5 +39,16 @@ template template_purchase(x, y) {
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  55, 16, -11, -10]
+    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+}
+
+template template_coach_purchase(x, y) {
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [x	,  y,  41, 16, -11, -10]
     [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
