@@ -1,7 +1,11 @@
 Changelog for Manila-Rapid-Transit
+0.4.0
+    *Added MRTC Class 7000 EMU (uses 3rd rail)
+
 0.3.1
     *Fixed LRTA Class 2000 display name
-    *Fixed Rapid Unit Coach Purchse Sprite
+    *Fixed Rapid Unit Coach Purchsse Sprite
+
 0.3.0
     *Added Rapid Unit Coaches
 

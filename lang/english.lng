@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 0.3.1
+STR_GRF_NAME        : Manila Rapid Transit 0.4.0
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 #LRV
@@ -32,6 +32,7 @@ STR_MRTC_CLASS_3000 : MRTC Class 3000
 
 #EMU
 STR_LRTA_CLASS_2000 : LRTA CLass 2000
+STR_MRTC_CLASS_7000 : MRTC CLass 7000
 
 #Coach
 STR_MU_COACH_UNPOWERED : Rapid Unit Coach Unpowered

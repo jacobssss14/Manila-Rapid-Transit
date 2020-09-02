@@ -80,4 +80,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/EMU/lrta_class_2000_graphics.pnml"
 #include "src/EMU/lrta_class_2000_item.pnml"
 
+//EMU-Metro
+#include "src/init/init_emu_metro.pnml"
+
+//LRTA Class 1000
+#include "src/EMU/mrtc_class_7000_properties.pnml"
+#include "src/EMU/mrtc_class_7000_graphics.pnml"
+#include "src/EMU/mrtc_class_7000_item.pnml"
+
 
