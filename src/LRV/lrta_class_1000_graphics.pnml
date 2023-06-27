@@ -27,22 +27,22 @@ spriteset (set_lrta_class_1000_purchase, "gfx/LRTA_CLASS_1000.png") {
 
 spriteset (set_lrta_class_1000_front, "gfx/LRTA_CLASS_1000.png") {
 
-    template_standard(1,1)
+    template_lrv(1,1)
 }
 
 
 spriteset (set_lrta_class_1000_back, "gfx/LRTA_CLASS_1000.png") {
 
-    template_standard(1,64)
+    template_lrv(1,64)
 }
 
 
 spriteset (set_lrta_class_1000_middle, "gfx/LRTA_CLASS_1000.png") {
 
-    template_standard(1,32)
+    template_lrv(1,32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_articulated_veh)) {
 	1: set_lrta_class_1000_middle;
 	2: set_lrta_class_1000_back;
     set_lrta_class_1000_front;
