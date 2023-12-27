@@ -1,0 +1,63 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+spriteset (set_lrta_class_1000_purchase, "gfx/LRTA_CLASS_1000.png") {
+
+    template_purchase(1,106)
+}
+
+
+spriteset (set_lrta_class_1000_front, "gfx/LRTA_CLASS_1000.png") {
+
+    template_lrv(1,1)
+}
+
+
+spriteset (set_lrta_class_1000_back, "gfx/LRTA_CLASS_1000.png") {
+
+    template_lrv(1,64)
+}
+
+
+spriteset (set_lrta_class_1000_middle, "gfx/LRTA_CLASS_1000.png") {
+
+    template_lrv(1,32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_articulated_veh)) {
+	1: set_lrta_class_1000_middle;
+	2: set_lrta_class_1000_back;
+    set_lrta_class_1000_front;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_articulated, extra_callback_info1) {
+    1..2: return item_lrv_lrta_class_1000;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+
+ENGINECAPACITYSWITCH(VEHIDCODE)
+
+WAGONCAPACITYSWITCH(VEHIDCODE)
+
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

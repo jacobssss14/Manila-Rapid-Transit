@@ -19,39 +19,115 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset (set_lrta_class_1000_purchase, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_1000_1984_purchase, "gfx/LRTA_CLASS_1000.png") {
 
     template_purchase(1,106)
 }
 
 
-spriteset (set_lrta_class_1000_front, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_1000_1984_front, "gfx/LRTA_CLASS_1000.png") {
 
     template_lrv(1,1)
 }
 
 
-spriteset (set_lrta_class_1000_back, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_1000_1984_back, "gfx/LRTA_CLASS_1000.png") {
 
     template_lrv(1,64)
 }
 
 
-spriteset (set_lrta_class_1000_middle, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_lrta_class_1000_1984_middle, "gfx/LRTA_CLASS_1000.png") {
 
     template_lrv(1,32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_articulated_veh)) {
-	1: set_lrta_class_1000_middle;
-	2: set_lrta_class_1000_back;
-    set_lrta_class_1000_front;
+spriteset (set_lrta_class_1000_2001_purchase, "gfx/LRTA_CLASS_1000_2001.png") {
+
+    template_purchase(1,106)
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_articulated, extra_callback_info1) {
+spriteset (set_lrta_class_1000_2001_front, "gfx/LRTA_CLASS_1000_2001.png") {
+
+    template_lrv(1,1)
+}
+
+
+spriteset (set_lrta_class_1000_2001_back, "gfx/LRTA_CLASS_1000_2001.png") {
+
+    template_lrv(1,64)
+}
+
+
+spriteset (set_lrta_class_1000_2001_middle, "gfx/LRTA_CLASS_1000_2001.png") {
+
+    template_lrv(1,32)
+}
+
+//1984 Articulation
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_1984_position, (position_in_articulated_veh)) {
+	1: set_lrta_class_1000_1984_middle;
+	2: set_lrta_class_1000_1984_back;
+    set_lrta_class_1000_1984_front;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_1984_articulated, extra_callback_info1) {
     1..2: return item_lrv_lrta_class_1000;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+//2001 Articulation
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_2001_position, (position_in_articulated_veh)) {
+	1: set_lrta_class_1000_2001_middle;
+	2: set_lrta_class_1000_2001_back;
+    set_lrta_class_1000_2001_front;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_2001_articulated, extra_callback_info1) {
+    1..2: return item_lrv_lrta_class_1000;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+//auto livery
+switch (FEAT_TRAINS, PARENT, switch_lrta_class_1000_purchase, current_date ) {
+    0..date(2000,12,31): set_lrta_class_1000_1984_purchase;
+    date(2001,1,1)..date(2050,1,1): set_lrta_class_1000_2001_purchase;
+    set_lrta_class_1000_2001_purchase;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_lrta_class_1000_auto, date_of_last_service ) {
+    0..date(2000,12,31): switch_lrta_class_1000_1984_position;
+    date(2020,1,1)..date(2050,1,1): switch_lrta_class_1000_2001_position;
+    switch_lrta_class_1000_2001_position;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_lrta_class_1000_articulated_auto, date_of_last_service ) {
+    0..date(2000,12,31): switch_lrta_class_1000_1984_articulated;
+    date(2001,1,1)..date(2050,1,1): switch_lrta_class_1000_2001_articulated;
+    switch_lrta_class_1000_2001_articulated;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_articulated, cargo_subtype) {
+    1: switch_lrta_class_1000_1984_articulated;
+    2: switch_lrta_class_1000_2001_articulated;
+    switch_lrta_class_1000_articulated_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, cargo_subtype) {
+	1: switch_lrta_class_1000_1984_position;
+    2: switch_lrta_class_1000_2001_position;
+    switch_lrta_class_1000_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_35, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_lrt_1984);
+    2: return string(str_livery_lrt_2001);
+    return CB_RESULT_NO_TEXT;
 }
 
 
