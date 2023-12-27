@@ -1,7 +1,7 @@
-/* Manila-Rapid NewGRF For OpenTTD
+/* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
-This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -19,11 +19,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
+//this file lists all vehicle loading speeds
+//it is referenced from the vehicle item definitions.
+//any changes to loading speeds can be done centrally from this file.
+isUltraSpeed = param_loadingspeed == 3; // 4 means ultra fast
+#define LOADINGSPEEDVALUE isUltraSpeed ? 255 : (param_loadingspeed == 0) ? LOADINGSPEED/2 : (param_loadingspeed == 2) ? LOADINGSPEED*2 : LOADINGSPEED
+#define LOADINGSPEEDPROPERTY loading_speed: LOADINGSPEEDVALUE;
+
 //No cargo vehicles
-#define NO_LOAD 0
+#define LOADINGSPEEDDEF_NONE 0
 
-//LRV
-#define LOAD_LRV 120
+//Intercity vehicles
+#define LOADINGSPEEDDEF_INTERCITY 16
 
-//EMU
-#define LOAD_EMU 140
+//Commuter vehicles
+#define LOADINGSPEEDDEF_COMMUTER 40
+
+//Metro vehicles
+#define LOADINGSPEEDDEF_METRO 120
+
+//Cargo vehicles
+#define LOADINGSPEEDDEF_CARGO 20
+
+//Mail vehicles
+#define LOADINGSPEEDDEF_MAIL 15

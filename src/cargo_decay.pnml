@@ -1,7 +1,7 @@
-/* Manila-Rapid NewGRF For OpenTTD
+/* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
-This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -18,6 +18,19 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+//Commuter Coach
+#define DECAY_COMMUTER cargo_age_period: 74;
 
-#define DECAY cargo_age_period: 120;
+//Intercity Coach
+#define DECAY_INTERCITY_COACH_PRIME cargo_age_period: 250;
+#define DECAY_INTERCITY_COACH cargo_age_period: 185;
+#define DECAY_ECONOMY_COACH cargo_age_period: 150;
+#define DECAY_3CLASS_COACH cargo_age_period: 100;
+
+//Sleeper Cars
+#define DECAY_SLEEPER_PRIME cargo_age_period: 500;
+#define DECAY_SLEEPER cargo_age_period: 450;
+#define DECAY_ECONOMY_SLEEPER cargo_age_period: 300;
+
+
 

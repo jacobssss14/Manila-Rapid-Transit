@@ -26,4 +26,5 @@ spriteset(set_rapid_unit_coach_powered_purchase, "gfx/RAPID_UNIT_COACH.png") {
 spriteset (set_rapid_unit_coach_powered, "gfx/RAPID_UNIT_COACH.png") {
     template_standard(1, 64)
 }
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

@@ -1,7 +1,7 @@
-/* Manila-Rapid NewGRF For OpenTTD
+/* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
-This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 railtypetable {
- RAIL,
+    RAIL,
 	ELRL,
-	MTRO
+	MTRO: [SAB3, "3RDR", MTRO, MONO]
 }

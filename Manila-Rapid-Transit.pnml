@@ -33,6 +33,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Undefined properties
 #include "src/undefine_properties.pnml"
 
+//Vehicle ID
+#include "src/vehicleID.pnml"
+
+//Wagon attachement
+#include "src/wagon_attach.pnml"
+
+//Purchasetext
+#include "src/purchasetext.pnml"
+
 //Capactiy switch
 #include "src/capacities.pnml"
 
@@ -50,6 +59,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //MU Coach calculations
 #include "src/mu_coach_calc.pnml"
+
 
 #include "src/cargotable.pnml"
 
