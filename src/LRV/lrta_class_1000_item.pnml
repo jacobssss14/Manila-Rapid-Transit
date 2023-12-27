@@ -19,25 +19,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-/*Kiha 35*/
+
 item (FEAT_TRAINS, ITEM) {
    property {
-      name: NAME;
+   name: NAME;
       climates_available: CLIMATE;
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
-		loading_speed: LOADINGSPEED;
-		PURCHASE_COST
-		RUNNING_COST
+		LOADINGSPEEDPROPERTY
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
 		power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY
+		DECAY_COMMUTER
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -56,9 +56,10 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
-	  RUNNING_COST_ENGINE_CALL
+	  can_attach_wagon: switch_can_attach_vehicle;
+	  RUNNINGCOSTENGINESWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_lrta_class_1000_purchase;
+      purchase: switch_lrta_class_1000_purchase;
       articulated_part: switch_lrta_class_1000_articulated;
 	  switch_lrta_class_1000_position;
 

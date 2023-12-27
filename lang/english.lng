@@ -23,23 +23,58 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 0.4.0
+STR_GRF_NAME        : Manila Rapid Transit 0.0.40
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
+
+STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
+STR_PARAM_PURCHASE_COST_DESC        :You can use this setting to increase or decrease the purchase costs of the vehicles in this set.
+STR_PARAM_RUNNING_COST              :Running cost multiplier
+STR_PARAM_RUNNING_COST_DESC         :You can use this setting to increase or decrease the running costs of the vehicles in this set.
+
+STR_PARAM_DIVIDE_16                 :1/16
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 (default)
+STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
+STR_PARAM_TIMES_16                  :16
+
+#loading speed parameter
+STR_PARAM_LOADINGSPEED					:Loading speed
+STR_PARAM_LOADINGSPEED_DESC				:Set the loading speed of this set
+STR_PARAM_LOADINGSPEED_SLOW				:Slow
+STR_PARAM_LOADINGSPEED_NORMAL			:Normal (default)
+STR_PARAM_LOADINGSPEED_FAST				:Fast
+STR_PARAM_LOADINGSPEED_ULTRA			:As fast as possible
+
+str_unit_wagon_passenger	:This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
+
+#Can attach vehicle texts
+str_cannot_attach_wagon_to_MU					:Cannot attach wagon to Multiple Unit engine
+str_cannot_attach_wagon_to_Unit_Wagon			:Cannot attach regular wagon to Unit Wagon
+str_cannot_attach_Unit_wagon_to_engine			:Cannot attach Unit Wagon to regular engine
+str_cannot_attach_Unit_wagon_to_wagon			:Cannot attach Unit Wagon to regular wagon
+str_cannot_attach_Unit_wagon_cargo_to_passenger	:Cannot attach cargo Unit Wagon to passenger Multiple Unit engine
+str_cannot_attach_Unit_wagon_passenger_to_cargo	:Cannot attach passenger Unit Wagon to cargo Multiple Unit engine
 
 #LRV
 STR_LRTA_CLASS_1000 : LRTA Class 1000
 STR_MRTC_CLASS_3000 : MRTC Class 3000
 
 #EMU
-STR_LRTA_CLASS_2000 : LRTA CLass 2000
-STR_MRTC_CLASS_7000 : MRTC CLass 7000
+STR_LRTA_CLASS_2000 : LRTA Class 2000
+STR_MRTC_CLASS_7000 : MRTC Class 7000
 
 #Coach
 STR_MU_COACH_UNPOWERED : Rapid Unit Coach Unpowered
 STR_MU_COACH_POWERED   : Rapid Unit Coach Powered
 
-
-
+#Livery
+str_livery_lrt_1984 : Manila LRT 1
+str_livery_lrt_2001 : LRTA Gen 1
+str_livery_auto     : Automatic Livery Changing
 
 
 

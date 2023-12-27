@@ -1,7 +1,7 @@
-/* Manila-Rapid NewGRF For OpenTTD
+/* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
-This file is part of the Manila-Rapid NewGRF based on 2ccts by Transportman
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -20,15 +20,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Vehicle IDS
-#define ID_RANGE_DMU 0x3E8..0x7CF
-item(FEAT_TRAINS, dmu_kiha_35, 1000) {}
-item(FEAT_TRAINS, dmu_kiha_59, 1001) {}
-item(FEAT_TRAINS, dmu_hyundai_rotem, 1002) {}
+//MU Coaches
 
 
-#define ID_RANGE_COACH 0x7D0..0xBB7
-item(FEAT_TRAINS, item_203_coach 2000) {}
-item(FEAT_TRAINS, item_203_generator_car  2001) {}
-item(FEAT_TRAINS, item_rapid_unit_coach_unpowered 2002) {}
-item(FEAT_TRAINS, item_rapid_unit_coach_powered 2003) {}
+//LRV
+#define ID_RANGE_LRV 0x3E8..0x7CF
+item(FEAT_TRAINS, item_lrv_lrta_class_1000, 1000 ) {}
 
+
+//EMU
+#define ID_RANGE_EMU 0x7D0..0xBB7
+item(FEAT_TRAINS, item_emu_lrta_class_2000, 2000) {}
+item(FEAT_TRAINS, item_emu_mrtc_class_3000, 2001) {}
+
+
+//Unit Coach
+#define ID_RANGE_UNIT 0xBB8..0xF9F
+item(FEAT_TRAINS, item_rapid_unit_coach_powered, 3000) {}
+item(FEAT_TRAINS, item_rapid_unit_coach_unpowered, 3001) {}

@@ -1,0 +1,40 @@
+
+
+
+
+
+//Check vehicle ID of the vehicle in front of the wagon being attached
+//The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached
+switch(FEAT_TRAINS, PARENT, switch_can_attach_wagon, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_LRV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Steam, allow
+    ID_RANGE_EMU: string(str_cannot_attach_wagon_to_MU); //DMU, disallow
+	ID_RANGE_UNIT: string(str_cannot_attach_wagon_to_Unit_Wagon); //Unit Wagons, disallow
+	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+}
+
+/*
+* Unit Wagon
+*/
+
+//Check vehicle ID of the vehicle in front of the unit wagon being attached
+//The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached
+switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_LRV: string(str_cannot_attach_Unit_wagon_to_engine); //Steam, disallow
+	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //DMU, allow
+	ID_RANGE_UNIT: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Same type, allow
+	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+}
+
+
+
+/*	Check vehicle ID to determine which case we have. 
+ *	Engines are always allowed
+ *	Wagons depend on vehicle in front of it
+*/
+switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
+	ID_RANGE_LRV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Steam, always allow
+	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Diesel, always allow
+	ID_RANGE_UNIT: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Diesel, always allow
+	
+	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+}
