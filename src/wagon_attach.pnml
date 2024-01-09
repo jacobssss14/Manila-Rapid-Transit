@@ -34,7 +34,6 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail, [STORE_TEMP(position_in
 switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
 	ID_RANGE_LRV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Steam, always allow
 	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Diesel, always allow
-	ID_RANGE_UNIT: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Diesel, always allow
-	
+	ID_RANGE_UNIT: switch_can_attach_unit_rail; //Diesel, always allow
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 }

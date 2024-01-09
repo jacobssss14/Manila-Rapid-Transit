@@ -62,6 +62,7 @@ item (FEAT_TRAINS, ITEM) {
       purchase: switch_lrta_class_1000_purchase;
       articulated_part: switch_lrta_class_1000_articulated;
 	  switch_lrta_class_1000_position;
+	  
 
    }
 

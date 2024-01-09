@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 0.0.40
+STR_GRF_NAME        : Manila Rapid Transit 1.0.0
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -60,12 +60,17 @@ str_cannot_attach_Unit_wagon_cargo_to_passenger	:Cannot attach cargo Unit Wagon 
 str_cannot_attach_Unit_wagon_passenger_to_cargo	:Cannot attach passenger Unit Wagon to cargo Multiple Unit engine
 
 #LRV
-STR_LRTA_CLASS_1000 : LRTA Class 1000
-STR_MRTC_CLASS_3000 : MRTC Class 3000
+STR_LRTA_CLASS_1000 : LRTA 1000 Class
+STR_LRTA_CLASS_1100 : LRTA 1100 Class
+STR_LRTA_CLASS_1100M : LRTA 1000 Class (Voith IGBT)
+STR_LRTA_CLASS_1200 : LRTA  1200 Class
+STR_LRTA_CLASS_13000 : LRTA  13000 Class
+STR_MRTC_CLASS_3000 : MRTC  3000 Class
+STR_MRTC_CLASS_3100 : MRTC  3100 Class
 
 #EMU
-STR_LRTA_CLASS_2000 : LRTA Class 2000
-STR_MRTC_CLASS_7000 : MRTC Class 7000
+STR_LRTA_CLASS_2000 : LRTA  2000 Class
+STR_MRTC_CLASS_7000 : MRTC  7000 Class
 
 #Coach
 STR_MU_COACH_UNPOWERED : Rapid Unit Coach Unpowered

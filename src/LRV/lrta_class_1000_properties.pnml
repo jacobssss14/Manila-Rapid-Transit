@@ -32,17 +32,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #define LOADINGSPEED LOADINGSPEEDDEF_METRO
 #define CARGODEF PASSENGERS
-#define SPEED 80 
-#define POWER 218
-#define WEIGHT 30
-#define TE_COEFFICIENT 0.3
+#define SPEED 80
+#define POWER 583.9
+#define WEIGHT 46
+#define TE_COEFFICIENT 0.4
 #define AIR_DRAG_COEFFICIENT 0
 
 #define LENGTH 6
 #define ACTUAL_LENGTH 6
 #define WAGON_LENGTH  6
 
-#define HEAD_CAPACITY 255
+#define HEAD_CAPACITY 124
 #define WAGON_CAPACITY 374
 
 #define DUAL_HEADED 0

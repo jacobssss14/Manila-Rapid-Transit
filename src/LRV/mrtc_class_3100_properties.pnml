@@ -21,10 +21,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE lrv_lrta_class_1000
-#define ITEM  item_lrv_lrta_class_1000
-#define NAME  string(STR_LRTA_CLASS_1000)
-#define INTRODUCTION_YEAR 1984
+#define VEHIDCODE lrv_mrtc_class_3100
+#define ITEM  item_lrv_mrtc_class_3100
+#define NAME  string(STR_MRTC_CLASS_3100)
+#define INTRODUCTION_YEAR 2016
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 40
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define LOADINGSPEED LOADINGSPEEDDEF_METRO
 #define CARGODEF PASSENGERS
 #define SPEED 80 
-#define POWER 218
+#define POWER 213
 #define WEIGHT 30
 #define TE_COEFFICIENT 0.3
 #define AIR_DRAG_COEFFICIENT 0
@@ -42,7 +42,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ACTUAL_LENGTH 6
 #define WAGON_LENGTH  6
 
-#define HEAD_CAPACITY 255
+#define HEAD_CAPACITY 197
 #define WAGON_CAPACITY 374
 
 #define DUAL_HEADED 0

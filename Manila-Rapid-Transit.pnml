@@ -82,6 +82,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/LRV/lrta_class_1000_graphics.pnml"
 #include "src/LRV/lrta_class_1000_item.pnml"
 
+//LRTA Class 1100
+#include "src/LRV/lrta_class_1100_properties.pnml"
+#include "src/LRV/lrta_class_1100_graphics.pnml"
+#include "src/LRV/lrta_class_1100_item.pnml"
+
+//LRTA Class 1100M
+#include "src/LRV/lrta_class_1100M_properties.pnml"
+#include "src/LRV/lrta_class_1100M_graphics.pnml"
+#include "src/LRV/lrta_class_1100M_item.pnml"
+
+//LRTA Class 1200
+#include "src/LRV/lrta_class_1200_properties.pnml"
+#include "src/LRV/lrta_class_1200_graphics.pnml"
+#include "src/LRV/lrta_class_1200_item.pnml"
+
+//LRTA Class 13000
+#include "src/LRV/lrta_class_13000_properties.pnml"
+#include "src/LRV/lrta_class_13000_graphics.pnml"
+#include "src/LRV/lrta_class_13000_item.pnml"
+
+//MRTC Class 3000
+#include "src/LRV/mrtc_class_3000_properties.pnml"
+#include "src/LRV/mrtc_class_3000_graphics.pnml"
+#include "src/LRV/mrtc_class_3000_item.pnml"
+
+//MRTC Class 3100
+#include "src/LRV/mrtc_class_3100_properties.pnml"
+#include "src/LRV/mrtc_class_3100_graphics.pnml"
+#include "src/LRV/mrtc_class_3100_item.pnml"
+
+
+
 //EMU-OHLE
 #include "src/init/init_emu_ohle.pnml"
 
@@ -93,7 +125,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //EMU-Metro
 #include "src/init/init_emu_metro.pnml"
 
-//LRTA Class 1000
+//MRTC 7000 
 #include "src/EMU/mrtc_class_7000_properties.pnml"
 #include "src/EMU/mrtc_class_7000_graphics.pnml"
 #include "src/EMU/mrtc_class_7000_item.pnml"

@@ -1,4 +1,22 @@
 Changelog for Manila-Rapid-Transit
+1.0.0
+    *Added MRTC 3000 and 3100 Class LRVs
+    *Added LRTA 1100, 1100 (Voith IGBT), 1200, and 13000 Class LRVs
+    *Fine Tuned Costs 
+    *Increased LRV speeds to 80
+    *Increased EMU speeds to 90
+    
+
+0.0.41
+    *Disable Standard rail vehicles
+    *Fixed wagon attachment. LRVs cannot use unit wagons
+
+0.0.40
+    *Fixed LRTA 1000 class
+
+0.0.30
+    *Rebase to PNR Trains 1.1.0
+
 0.5.0
     *Import Graphics Template from PNR-Trains
     

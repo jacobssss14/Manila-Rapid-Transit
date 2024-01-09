@@ -43,23 +43,12 @@ template template_standard(x, y) {
 }
 
 template template_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  55, 16, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+
 }
 
 template template_coach_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  41, 16, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+  
 }
+
