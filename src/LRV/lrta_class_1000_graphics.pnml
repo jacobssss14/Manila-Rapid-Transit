@@ -123,7 +123,7 @@ switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, cargo_subtype) {
     switch_lrta_class_1000_auto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_35, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_livery_text_class_1000, cargo_subtype) {
     0: return string(str_livery_auto);
     1: return string(str_livery_lrt_1984);
     2: return string(str_livery_lrt_2001);

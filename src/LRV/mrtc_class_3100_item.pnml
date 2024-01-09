@@ -59,9 +59,9 @@ item (FEAT_TRAINS, ITEM) {
 	  can_attach_wagon: switch_can_attach_vehicle;
 	  RUNNINGCOSTENGINESWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_lrta_class_1000_purchase;
-      articulated_part: switch_lrta_class_1000_articulated;
-	  switch_lrta_class_1000_position;
+      purchase: set_mrtc_class_3100_purchase;
+      articulated_part: switch_mrtc_class_3100_articulated;
+	  switch_mrtc_class_3100_position;
 
    }
 

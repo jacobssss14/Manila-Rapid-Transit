@@ -19,38 +19,38 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset (set_lrta_class_1000_purchase, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_mrtc_class_3100_purchase, "gfx/MRTC_CLASS_3100.png") {
 
     template_purchase(1,106)
 }
 
 
-spriteset (set_lrta_class_1000_front, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_mrtc_class_3100_front, "gfx/MRTC_CLASS_3100.png") {
 
     template_lrv(1,1)
 }
 
 
-spriteset (set_lrta_class_1000_back, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_mrtc_class_3100_back, "gfx/MRTC_CLASS_3100.png") {
 
     template_lrv(1,64)
 }
 
 
-spriteset (set_lrta_class_1000_middle, "gfx/LRTA_CLASS_1000.png") {
+spriteset (set_mrtc_class_3100_middle, "gfx/MRTC_CLASS_3100.png") {
 
     template_lrv(1,32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_position, (position_in_articulated_veh)) {
-	1: set_lrta_class_1000_middle;
-	2: set_lrta_class_1000_back;
-    set_lrta_class_1000_front;
+switch(FEAT_TRAINS, SELF, switch_mrtc_class_3100_position, (position_in_articulated_veh)) {
+	1: set_mrtc_class_3100_middle;
+	2: set_mrtc_class_3100_back;
+    set_mrtc_class_3100_front;
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_lrta_class_1000_articulated, extra_callback_info1) {
-    1..2: return item_lrv_lrta_class_1000;
+switch(FEAT_TRAINS, SELF, switch_mrtc_class_3100_articulated, extra_callback_info1) {
+    1..2: return item_lrv_mrtc_class_3100;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 

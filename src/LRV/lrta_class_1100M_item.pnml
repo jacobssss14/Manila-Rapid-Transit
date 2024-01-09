@@ -38,6 +38,7 @@ item (FEAT_TRAINS, ITEM) {
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
 		DECAY_COMMUTER
+		variant_group: 1001;
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -59,9 +60,9 @@ item (FEAT_TRAINS, ITEM) {
 	  can_attach_wagon: switch_can_attach_vehicle;
 	  RUNNINGCOSTENGINESWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_lrta_class_1000_purchase;
-      articulated_part: switch_lrta_class_1000_articulated;
-	  switch_lrta_class_1000_position;
+      purchase: set_lrta_class_1100M_purchase;
+      articulated_part: switch_lrta_class_1100M_articulated;
+	  switch_lrta_class_1100M_position;
 
    }
 
