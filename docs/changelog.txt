@@ -1,4 +1,7 @@
 Changelog for Manila-Rapid-Transit
+1.0.1
+    *Fixed naming error for 1100 Class (Voith IGBT)
+
 1.0.0
     *Added MRTC 3000 and 3100 Class LRVs
     *Added LRTA 1100, 1100 (Voith IGBT), 1200, and 13000 Class LRVs

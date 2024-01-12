@@ -62,7 +62,7 @@ str_cannot_attach_Unit_wagon_passenger_to_cargo	:Cannot attach passenger Unit Wa
 #LRV
 STR_LRTA_CLASS_1000 : LRTA 1000 Class
 STR_LRTA_CLASS_1100 : LRTA 1100 Class
-STR_LRTA_CLASS_1100M : LRTA 1000 Class (Voith IGBT)
+STR_LRTA_CLASS_1100M : LRTA 1100 Class (Voith IGBT)
 STR_LRTA_CLASS_1200 : LRTA  1200 Class
 STR_LRTA_CLASS_13000 : LRTA  13000 Class
 STR_MRTC_CLASS_3000 : MRTC  3000 Class
