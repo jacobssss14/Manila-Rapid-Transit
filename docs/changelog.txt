@@ -1,4 +1,11 @@
 Changelog for Manila-Rapid-Transit
+1.1.0
+    *Fixed Rapid Unit Coach purchase
+    *Added 2-Car and 3-Car LRV Expansion 
+    *Usage: Use 3-Car LRVs to expand LRTA 1000 Class, MRTC 3000 Class, and MRTC 3100 Class
+            Use 2-Car LRVs to expand LRTA 1100 Class, LRTA 1200 Class, and LRTA 13000 Class
+    
+
 1.0.0
     *Added MRTC 3000 and 3100 Class LRVs
     *Added LRTA 1100, 1100 (Voith IGBT), 1200, and 13000 Class LRVs

@@ -63,6 +63,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "src/cargotable.pnml"
 
+//Coaches
+#include "src/init/init_coach.pnml"
 
 //Unit Coach
 #include "src/rapid_transit_unit/rapid_unit_coach_powered_graphics.pnml"
@@ -72,6 +74,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/rapid_transit_unit/rapid_unit_coach_unpowered_graphics.pnml"
 #include "src/rapid_transit_unit/rapid_unit_coach_unpowered_properties.pnml"
 #include "src/rapid_transit_unit/rapid_unit_coach_unpowered_item.pnml"
+
+//LRV 3-Car Unit
+#include "src/lrv_unit/lrv_3_car_properties.pnml"
+#include "src/lrv_unit/lrv_3_car_graphics.pnml"
+#include "src/lrv_unit/lrv_3_car_item.pnml"
+
+//LRV 2-Car Unit
+#include "src/lrv_unit/lrv_2_car_properties.pnml"
+#include "src/lrv_unit/lrv_2_car_graphics.pnml"
+#include "src/lrv_unit/lrv_2_car_item.pnml"
 
 
 //LRV

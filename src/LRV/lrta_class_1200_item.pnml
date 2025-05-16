@@ -65,4 +65,17 @@ item (FEAT_TRAINS, ITEM) {
 
    }
 
+   livery_override (item_lrv_2_car) {
+	    LOADINGSPEEDPROPERTY
+		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
+	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		DECAY_COMMUTER
+		power: POWERMUWAGONPOWERED
+		weight: WEIGHTMUWAGONPOWERED
+		length: WAGON_LENGTH;
+		tractive_effort_coefficient: TEMUWAGONPOWERED
+		articulated_part: switch_lrta_class_1200_articulated;
+	  	switch_lrta_class_1200_position;
+   }
+
 }

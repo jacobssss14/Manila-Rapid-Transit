@@ -20,13 +20,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE rapid_unit_coach_powered
-#define ITEM item_rapid_unit_coach_powered
-#define NAME string(STR_MU_COACH_POWERED)
+#define VEHIDCODE lrv_3_car
+#define ITEM item_lrv_3_car
+#define NAME string(STR_LRV_3_CAR)
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 
 
-#define INTRODUCTION_YEAR 2003
+#define INTRODUCTION_YEAR 1984
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 60

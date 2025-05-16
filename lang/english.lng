@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 1.0.0
+STR_GRF_NAME        : Manila Rapid Transit 1.1.0
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -75,6 +75,8 @@ STR_MRTC_CLASS_7000 : MRTC  7000 Class
 #Coach
 STR_MU_COACH_UNPOWERED : Rapid Unit Coach Unpowered
 STR_MU_COACH_POWERED   : Rapid Unit Coach Powered
+STR_LRV_3_CAR          : 3-Car LRV
+STR_LRV_2_CAR          : 2-Car LRV
 
 #Livery
 str_livery_lrt_1984 : Manila LRT 1

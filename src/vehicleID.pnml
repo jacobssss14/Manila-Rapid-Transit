@@ -22,6 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Vehicle IDS
 //MU Coaches
 
+//3-Car LRV
 
 //LRV
 #define ID_RANGE_LRV 0x3E8..0x7CF
@@ -32,6 +33,9 @@ item(FEAT_TRAINS, item_lrv_lrta_class_1200, 1003 ) {}
 item(FEAT_TRAINS, item_lrv_lrta_class_13000, 1004 ) {}
 item(FEAT_TRAINS, item_lrv_mrtc_class_3000, 1005 ) {}
 item(FEAT_TRAINS, item_lrv_mrtc_class_3100, 1006 ) {}
+item(FEAT_TRAINS, item_lrv_3_car, 1007 ) {}
+item(FEAT_TRAINS, item_lrv_2_car, 1008 ) {}
+
 
 //EMU
 #define ID_RANGE_EMU 0x7D0..0xBB7
