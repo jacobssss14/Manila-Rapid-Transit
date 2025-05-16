@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 1.1.0
+STR_GRF_NAME        : Manila Rapid Transit 1.1.1
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier

@@ -1,4 +1,8 @@
 Changelog for Manila-Rapid-Transit
+1.1.1
+    *Fixed LRV capacities when expanded using 2/3-Car LRVs
+    *Adjusted MRTC 3000 Class and 3100 Class Capacities
+
 1.1.0
     *Fixed Rapid Unit Coach purchase
     *Added 2-Car and 3-Car LRV Expansion 
