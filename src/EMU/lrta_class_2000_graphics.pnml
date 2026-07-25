@@ -47,7 +47,7 @@ switch(FEAT_TRAINS, SELF, switch_lrta_class_2000_pass_cargo, cargo_classes){
 }
 
 switch(FEAT_TRAINS, SELF, switch_lrta_class_2000_reversed, var[0xC8]) {
-	 0xFE: set_lrta_class_2000_back;
+	0xFE: set_lrta_class_2000_back;
     0xFF: set_lrta_class_2000_back;
     set_lrta_class_2000_front;
 }

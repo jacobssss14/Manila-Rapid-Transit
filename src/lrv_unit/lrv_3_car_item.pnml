@@ -39,7 +39,7 @@ item(FEAT_TRAINS, ITEM) {
 	
 		CARGODEF
 		misc_flags: MISC_FLAGS;
-	
+		extra_flags: EXTRA_FLAGS;
 		visual_effect_and_powered: VISUAL_FLAG;
 		
 		sprite_id: SPRITE_ID;
@@ -49,8 +49,7 @@ item(FEAT_TRAINS, ITEM) {
 	 graphics {	   
       purchase: set_lrv_3_car_purchase;
       articulated_part: switch_lrv_3_car_articulated;
-	  switch_lrv_3_car_position;
-	  
+	  switch_lrv_3_car_position;  
    }
    
 }

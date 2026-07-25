@@ -39,7 +39,7 @@ item(FEAT_TRAINS, ITEM) {
 	
 		CARGODEF
 		misc_flags: MISC_FLAGS;
-	
+		extra_flags: EXTRA_FLAGS;
 		visual_effect_and_powered: VISUAL_FLAG;
 		
 		sprite_id: SPRITE_ID;

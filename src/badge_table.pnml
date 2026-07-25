@@ -1,0 +1,11 @@
+badgetable {
+    "flag",
+    "flag/PH",
+    "power",
+    "power/electric_overhead",
+    "power/electric_3rd_rail",
+    "role",
+    "role/light_metro",
+    "role/metro",
+
+}

@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 1.1.1
+STR_GRF_NAME        : Manila Rapid Transit 1.1.2
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -50,6 +50,8 @@ STR_PARAM_LOADINGSPEED_FAST				:Fast
 STR_PARAM_LOADINGSPEED_ULTRA			:As fast as possible
 
 str_unit_wagon_passenger	:This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
+str_unit_lrv_3_passenger	:This generic 3-car LRV can ONLY be used with passenger LRVs to create trains of the desired length
+str_unit_lrv_2_passenger	:This generic 2-car LRV can ONLY be used with passenger LRVs to create trains of the desired length
 
 #Can attach vehicle texts
 str_cannot_attach_wagon_to_MU					:Cannot attach wagon to Multiple Unit engine
