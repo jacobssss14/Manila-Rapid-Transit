@@ -25,8 +25,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ITEM  item_lrv_lrta_class_13000
 #define NAME  string(STR_LRTA_CLASS_13000)
 #define INTRODUCTION_YEAR 2023
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
-#define MODEL_LIFE 40
+#define CLIMATE bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL)
+#define MODEL_LIFE VEHICLE_NEVER_EXPIRES
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 30
 

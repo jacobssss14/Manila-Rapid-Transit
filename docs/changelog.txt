@@ -1,4 +1,9 @@
 Changelog for Manila-Rapid-Transit
+1.2.0
+    *Adjusted Cargo Age Period
+    *Adjusted Loading Speed 
+    *Adjusted some vehicle life
+
 1.1.2
     *Added support for reversing trains without speed penalty (See changes for OpenTTD 16)
 

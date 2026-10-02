@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define CURRENT_TRACK_TYPE ELRL
 #define CURRENT_RUNNING_COST_BASE RUNNING_COST_ELECTRIC
 #define CURRENT_ENGINE_CLASS ENGINE_CLASS_ELECTRIC
-#define BADGE_LRV badges: ["flag/PH", "power/electric_overhead", "role/light_metro"]
+#define BADGE_LRV badges: ["flag/PH", "power/electric"]
 
 // Room for specific defines
 #define PURCHASECOSTVALUE PURCHASECOSTEMUVALUE
