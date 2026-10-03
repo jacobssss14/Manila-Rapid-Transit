@@ -45,6 +45,7 @@ item(FEAT_TRAINS, ITEM) {
 		sprite_id: SPRITE_ID;
 		dual_headed: DUAL_HEADED;
 		length: LENGTH;
+		badges: ["flag/PH", "role/light_metro"];
 	}
 	 graphics {	   
       purchase: set_lrv_3_car_purchase;

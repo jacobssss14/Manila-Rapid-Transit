@@ -1,4 +1,7 @@
 Changelog for Manila-Rapid-Transit
+1.2.1
+    *Added Badges
+
 1.2.0
     *Adjusted Cargo Age Period
     *Adjusted Loading Speed 

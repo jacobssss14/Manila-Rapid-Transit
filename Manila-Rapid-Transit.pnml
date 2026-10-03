@@ -42,9 +42,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Purchasetext
 #include "src/purchasetext.pnml"
 
-//Badge Table 
-#include "src/badge_table.pnml"
-
 //Capactiy switch
 #include "src/capacities.pnml"
 
@@ -63,6 +60,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //MU Coach calculations
 #include "src/mu_coach_calc.pnml"
 
+//Badge Table 
+#include "src/badge_table.pnml"
 
 #include "src/cargotable.pnml"
 

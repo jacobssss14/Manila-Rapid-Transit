@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : Manila Rapid Transit 1.2.0
+STR_GRF_NAME        : Manila Rapid Transit 1.2.1
 STR_GRF_DESCRIPTION : Trains used on the Manila Rapid Transit System
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -85,6 +85,12 @@ str_livery_lrt_1984 : Manila LRT 1
 str_livery_lrt_2001 : LRTA Gen 1
 str_livery_auto     : Automatic Livery Changing
 
-
-
-
+#Badges 
+STR_FLAG:Country of Operation
+STR_FLAG_PH:Philippines
+STR_POWER:Power Source 
+STR_POWER_ELECTRIC_OH:Electric Overhead Line 
+STR_POWER_ELECTRIC_3RD:Electric 3rd Rail 
+STR_ROLE:Role 
+STR_LIGHT_METRO:Light Metro    
+STR_HEAVY_METRO:Metro 

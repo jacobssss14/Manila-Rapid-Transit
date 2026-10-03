@@ -52,3 +52,11 @@ template template_coach_purchase(x, y) {
   
 }
 
+template template_badge_flag(x, y) {
+    [x, y, 32, 16, 0, 0]
+}
+
+template template_badge(x, y) {
+    [x, y, 16, 16, 0 ,0]
+}
+

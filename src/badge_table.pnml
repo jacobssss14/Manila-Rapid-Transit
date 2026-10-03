@@ -1,8 +1,130 @@
- badgetable {
-     "flag",
-     "flag/PH",
-     "power",
-     "power/steam",
-     "power/diesel",
-     "power/electric",
- }
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2026  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//Badge sprites 
+
+spriteset (badge_ph_flag, "gfx/Badges/PH_Flag.png") {
+    template_badge_flag(0, 0)
+}
+
+spriteset (badge_light_metro, "gfx/Badges/Light_Metro.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_heavy_metro, "gfx/Badges/Heavy_Metro.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_electric_oh, "gfx/Badges/Electric_OH.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_electric_3rd, "gfx/Badges/Electric_3rd.png") {
+    template_badge(0, 0)
+}
+
+//badgetable
+
+badgetable {
+    "flag",
+    "flag/PH",
+    "power",
+    "power/electric_oh",
+    "power/electric_3rd",
+    "role",
+    "role/light_metro",
+    "role/heavy_metro",
+}
+
+item (FEAT_BADGES, flag) {
+    property {
+        label: "flag";
+        name: string(STR_FLAG);
+    }
+} 
+
+item (FEAT_BADGES, flag_PH) {
+    property {
+        label: "flag/PH";
+        name: string(STR_FLAG_PH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_ph_flag;
+    }
+}
+
+item (FEAT_BADGES, powers) {
+    property {
+        label: "power";
+        name: string(STR_POWER);
+    }
+} 
+
+item (FEAT_BADGES, power_electric_oh) {
+    property {
+        label: "power/electric_oh";
+        name: string(STR_POWER_ELECTRIC_OH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_electric_oh;
+    }
+}
+
+item (FEAT_BADGES, power_electric_3rd) {
+    property {
+        label: "power/electric_3rd";
+        name: string(STR_POWER_ELECTRIC_3RD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_electric_3rd;
+    }
+}
+
+item (FEAT_BADGES, role) {
+    property {
+        label: "role";
+        name: string(STR_ROLE);
+    }
+}
+
+item (FEAT_BADGES, role_light_metro) {
+    property{
+        label: "role/light_metro";
+        name: string(STR_LIGHT_METRO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_light_metro;
+    }
+}
+
+item (FEAT_BADGES, role_heavy_metro) {
+    property{
+        label: "role/heavy_metro";
+        name: string(STR_HEAVY_METRO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_heavy_metro;
+    }
+}

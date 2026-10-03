@@ -20,7 +20,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 spriteset (set_lrta_class_1000_1984_purchase, "gfx/LRTA_CLASS_1000.png") {
-
     template_purchase(1,106)
 }
 
